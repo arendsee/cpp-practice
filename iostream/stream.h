@@ -4,7 +4,6 @@
 #include <iostream>
 #include <ostream>
 #include <fstream>
-#include <iomanip>
 #include <sstream>
 
 int write_file_as_hex(int argc, char* arg[]);

@@ -29,3 +29,24 @@ int write_file_as_hex(int argc, char* argv[]){
 
     return 0;
 }
+
+int read_table_into_variables(std::ifstream& f){
+    std::string name;
+    std::string age;
+    std::string sign;
+
+    std::string line;
+    while(std::getline(f, line)){
+
+        // convert a string to a stringstream 
+        std::stringstream row(line);
+
+        // splits on space
+        // NOTE: silent failure
+        row >> name >> age >> sign;
+
+        std::cout << name << age << sign << "\n";
+    }
+
+    return 1;
+}

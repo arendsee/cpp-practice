@@ -5,7 +5,10 @@
 #include <ostream>
 #include <fstream>
 #include <iomanip>
+#include <sstream>
 
 int write_file_as_hex(int argc, char* arg[]);
+
+int read_table_into_variables(std::ifstream& f);
 
 #endif

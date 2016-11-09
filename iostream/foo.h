@@ -2,11 +2,7 @@
 #define __FOO_H__
 
 #include <string>
-
 #include <iostream>
-#include <ostream>
-#include <fstream>
-#include <sstream>
 
 class Foo
 {

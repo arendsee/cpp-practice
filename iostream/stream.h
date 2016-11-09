@@ -2,7 +2,6 @@
 #define __STREAM_H__
 
 #include <iostream>
-#include <ostream>
 #include <fstream>
 #include <sstream>
 

@@ -43,9 +43,11 @@ int read_table_into_variables(std::ifstream& f){
 
         // splits on space
         // NOTE: silent failure
-        row >> name >> age >> sign;
-
-        std::cout << name << age << sign << "\n";
+        if(row >> name >> age >> sign){
+            std::cout << name << age << sign << "\n";
+        } else {
+            std::cerr << "Expected (string int char)\n";
+        }
     }
 
     return 1;
